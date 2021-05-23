@@ -1,0 +1,7 @@
+<html>
+
+{% for i in request.session.items %}
+{{i.0}} --- {{i.1}} <br><br>
+{% endfor %}
+
+</html>

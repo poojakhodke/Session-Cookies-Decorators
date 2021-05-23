@@ -1,0 +1,27 @@
+<html>
+    <h2>You Are Into The Cookies and Session Project</h2>
+    <h3>The following Activities are performed in this Project</h3>
+
+<fieldset><legend><h4>Cookies:- </h4></legend>
+<a href= "{% url 'setcookie' %}">Set Cookies</a><br><br>
+<a href= "{% url 'showcookie' %}">Show Cookie</a><br><br>
+<a href= "{% url 'deletecookies' %}">Delete Cookie</a><br><br>
+</fieldset>
+
+<fieldset><legend><h4>Session:- </h4></legend>
+<a href= "{% url 'testcookie' %}">Test Cookies</a><br><br>
+<a href= "{% url 'deletecookie' %}">Delete Cookies</a><br><br>
+<a href= "{% url 'demo' %}">Demo View</a><br><br>
+<a href= "{% url 'create' %}">Create Session</a><br><br>
+<a href= "{% url 'show' %}">Show Session</a><br><br>
+<a href= "{% url 'delete' %}">Delete Session</a><br><br>
+
+<a href= "{% url 'login' %}">LOGIN</a><br><br>
+</fieldset>
+
+<fieldset><legend><h4>Decorators:- </h4></legend>
+<a href= "{% url 'index' %}">Index</a><br><br>
+<a href= "{% url 'add' %}">Add Blog</a><br><br>
+
+    </fieldset>
+</html>

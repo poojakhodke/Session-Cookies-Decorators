@@ -1,0 +1,11 @@
+<html>
+
+<h3>You are Authenticated User....<br>
+Welcome to Django Application</h3>
+
+<h4>Name:- {{request.user}}</h4>
+
+<br>
+<a href= "{% url 'homepage' %}">Home Page</a><br><br>
+<a href= "{% url 'logout' %}">Logout</a>
+</html>
