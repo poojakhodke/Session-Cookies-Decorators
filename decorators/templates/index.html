@@ -1,5 +1,19 @@
 <html>
-
+    <head>
+    <style>
+        .messages{
+        color: green;
+    }
+    </style>
+    </head>
+<body>
+{% if messages %}
+    <ul class="messages">
+    {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
 <h2>This is the Index Page</h2>
 
 <h3>Blogs</h3>
@@ -15,5 +29,5 @@
 
 </li>
 {% endfor %}
-
+</body>
 </html>
